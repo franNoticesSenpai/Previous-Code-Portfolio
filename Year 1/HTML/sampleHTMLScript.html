@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+<head>
+<meta http-equiv="content-type" content="text.html; charset=iso-8859-1" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>Pizza Palace</title>
+<link href="default.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+
+<body>
+<div id="container">
+<header>
+<h1>Pizza Palace</h1>
+</header>
+
+<nav>
+<ul>
+	<li><a class="pagelink" href="order.html">Home</a></li>
+	<li><a class="pagelink" href="menu2.html">Menu</a></li>
+	<li><a class="pagelink" href="specials.html">Specials</a></li>
+    <li><a class="pagelink" href="opportunity.html">Opportunity</a></li>
+    <li><a class="pagelink" href="about2.html">About Us</a></li>
+   </ul>
+   
+   </nav>
+   <div id="rightbox">
+   Your ad goes here!
+   
+ 	</div><!-- end div rightbox -->
+    
+    <div class="middlebox">
+         <form name="menuorder" method="post"
+         	    id="formbox"
+                action="script/processform.php"> 
+    
+          <fieldset>
+          	<legend>Place your order</legend>
+            	<label>First name:</label>
+                <input type="text" name="firstname"
+                		required    id="firstname"
+                       placeholder="Your firstname">
+                       
+                <label>Last name:</label>
+                	<input type="text" name="lastname"
+                    	required       id="lastname"
+                        placeholder="Your last name">
+                        
+                 <label>Phone number:</label>
+                     <input type="text" name="phone"
+                     	required       pattern="[\(]\d{3}[\)]\d{3}[\-]\d{4}"
+                        placeholder= "(250)-999-9999">
+                        
+                 <label>Credit Card:</label>
+                 	  <input type="text" name="credit"
+                      	 required      pattern="[0-9]{4,6}" 
+                         placeholder="Credit card number">
+                         
+                 <label> Credit card expiry date as MM- YY:</label>
+                       <input type="text" name="expiry"
+                       	  required      pattern="[\d{2}[\-]\d{2}"
+                          placeholder= "01-13">
+                          
+                 Pizza Type
+                 
+                 	<input type="radio"     name="pizza" 
+                    		value="cheese"     id="cheese">
+                            
+                    <label for="cheese"> Cheese </label>    
+                            
+                    <input type="radio"     name="pizza" 
+                    		 value="pepperoni" id="pepperoni">
+                             
+                    <label for="pepperoni"> Pepperoni </label>
+                    
+                    <input type="radio"      name="pizza"
+                    		 value="hawaiian"   id="hawaiian"> 
+                             
+                    <label for="hawaiian"> Hawaiian </label>
+                    
+                   Pizza Size
+                   
+                   	 <select name="size" id="size">
+                     	<option value="individual" slected="selected"> 
+                          Individual
+                        </option>
+                        
+                        <option value="medium">
+                          Medium 
+                         </option>
+                         
+                         <option value="large">
+                          Large
+                          </option>
+                          
+                     </select>
+                     
+                     
+                    Pizza Toppings
+                    
+                    	<input type="checkbox" name="topping[]"
+                        	value="tomato"        id="tomato">
+                            <label for="tomato"> Tomato Sauce </label>
+                         
+                         <input type="checkbox"     name="topping[]"
+                                 value="greenpepper"  id="greenpepper">
+                         <label for="greenpepper"> Green Pepper </label>
+                         
+                         <input type="checkbox" name="topping[]"
+                         	     value="mushroom"    id="mushroom">
+                         <label for="mushroom"> Mushroom </label>
+                         
+                         <input type="checkbox" name="topping[]"
+                             value="pepperoni"    id="pepptopping">
+                          <label for="pepperoni"> Pepperoni </label>
+                          
+                         <input type="checkbox" name="topping[]"
+                         		 value="pineapple"  id="pineapple">
+                          <label for="pineapple"> Pineapple </label>
+                          
+                    Pizza Quantity
+                    	<input type="number" id="quantity" name="quantity" value="1" min="1"  max="20" required>
+                        
+                    Select Order Type
+                    	<input type:"radio" name="order" value="pickup" id="pickup">
+                        <label for="pickup"> Pickup </label>
+                        <input type:"radio" name="order" value="delivery" id="delivery">
+                        <label for="delivery">Delivery</label>
+                        
+                        
+                        
+                        
+                        
+                         
+                        
+                        
+              <input type="submit"  name="submit" value="cheese" id="cheese">
+              <input type="reset"   name="reset"  value="Reset order selections">
+              
+                
+             </fieldset>
+          </form> 
+    
+    </div> <!-- end div middlebox -->
+    
+    <footer>
+    <div id="footer">
+    <span>&copy;M and L - 2013</span>
+     </div>
+    </footer>
+    </div> <!-- end div container -->
+    
+    
+    
+   
+  
+
+
+</body>
+</html>
+</html>
